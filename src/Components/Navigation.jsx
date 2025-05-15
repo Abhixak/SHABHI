@@ -1,11 +1,8 @@
-import React from 'react'
-import logo from "/logo.png"
+import logo from "/logo.png";
 const Navigation = () => {
   return (
-    <nav className='h-[95%] w-[5%] bg-[#bfa5a5] rounded-2xl border-2 border-[#000576] absolute left-2'>
-      <img src={logo} alt="" />
-    </nav>
-  )
-}
+    <nav className="rounded-2xl border-2 border-[#000576] h-[10%] absolute bottom-2 w-[90%] z-10 md:h-[95%] md:w-[5%] sm:w-[95%] md:static bg-[#bfa5a5] "></nav>
+  );
+};
 
-export default Navigation
+export default Navigation;

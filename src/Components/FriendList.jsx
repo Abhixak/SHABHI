@@ -3,7 +3,7 @@ import "../Styles/friendlist.css";
 const FriendList = () => {
   return (
     <>
-      <div className="bg-[#97bfff] absolute left-25 rounded-2xl w-full md:w-[20%] h-[15%] md:h-[95%] border-2 border-[#000576]">
+      <div className="z-5 border-2 border-[#000576] bg-[#97bfff] rounded-2xl absolute left-5 top-4 w-[50%] h-[85%] md:static sm:w-[40%] md:w-[20%] sm:h-[85%] md:h-[95%] sm:left-4 sm:top-4 ">
         
       </div>
     </>
