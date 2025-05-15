@@ -1,12 +1,41 @@
-# React + Vite
+# Shabhi — A Chat App That Works Like Email 📬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Shabhi is a simple yet powerful messaging application that combines the speed of chat with the structure and flow of email. Designed for users who prefer clarity, privacy, and persistence in their conversations, Shabhi enables one-to-one messaging with subject lines, threaded messages, and inbox-style organization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📨 Send and receive messages like email (with subject and message body)
+- 📁 Inbox, Sent, and Archived folders for message management
+- 🔔 Notification support for new messages
+- 🧑‍💻 User authentication and secure sessions
+- 🔒 End-to-end message encryption (optional/future)
+- 🕓 Timestamps and message history tracking
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 Tech Stack
+
+- Frontend: React.js + Tailwind CSS
+- Backend: Node.js + Express.js
+- Database: MongoDB (with Mongoose)
+- Authentication: JWT (JSON Web Tokens)
+- Deployment: [Optional] Render, Vercel, or Heroku
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js & npm
+- MongoDB (local or Atlas)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/shabhi.git
+cd shabhi
