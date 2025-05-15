@@ -5,7 +5,7 @@ import DisplayScreen from './DisplayScreen'
 
 const MainContainer = () => {
   return (
-    <div className='w-screen h-screen bg-[#b0cdcb] flex gap-2 items-center justify-center'>
+    <div className='w-screen h-screen bg-[#b0cdcb] flex gap-4 items-center justify-center'>
       <Navigation />
       <FriendList />
       <DisplayScreen />
