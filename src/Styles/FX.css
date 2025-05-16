@@ -6,7 +6,7 @@
 }
 
 .dataContainer.active {
-  width: 60%; /* animation width for small/medium screens */
+  width: 70%; /* animation width for small/medium screens */
   opacity: 1;
 }
 
@@ -18,4 +18,9 @@
     overflow: visible;
     transition: none !important; /* disable transition */
   }
+}
+
+.blur-sm {
+  filter: blur(1px);
+  transition: filter 0.3s ease;
 }
