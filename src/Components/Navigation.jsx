@@ -1,12 +1,12 @@
 import { PiChatsTeardropBold } from "react-icons/pi";
-import { PiUsersBold } from "react-icons/pi"; // will use for "Friends"
+import { PiUsersBold } from "react-icons/pi";
 import { RiNotificationLine } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 
 const Navigation = ({ onIconClick, activeTab }) => {
   const tabs = [
     { icon: <PiChatsTeardropBold />, label: "chats" },
-    { icon: <PiUsersBold />, label: "friends" }, // renamed from users to friends
+    { icon: <PiUsersBold />, label: "friends" },
     { icon: <RiNotificationLine />, label: "notifications" },
     { icon: <CgProfile />, label: "profile" }
   ];
@@ -16,7 +16,9 @@ const Navigation = ({ onIconClick, activeTab }) => {
       {tabs.map(({ icon, label }) => (
         <div
           key={label}
-          className={`cursor-pointer text-[1.5em] text-[#402e32] ${activeTab === label ? "font-bold scale-110" : ""}`}
+          className={`cursor-pointer text-[1.5em] transition-colors duration-300 ease-in-out
+            ${activeTab === label ? "text-[#ff8a5e] font-bold scale-110" : "text-[#402e32]"}
+          `}
           onClick={() => onIconClick(label)}
           title={label.charAt(0).toUpperCase() + label.slice(1)}
         >
