@@ -1,3 +1,5 @@
+import ChatScreen from "./ChatScreen";
+
 const DisplayScreen = ({ blur }) => {
   return (
     <div className={`
@@ -12,6 +14,8 @@ const DisplayScreen = ({ blur }) => {
       ${blur ? "blur-sm" : ""}
     `}>
       DISPLAY SCREEN
+      <ChatScreen/> 
+      {/* delete later */}
     </div>
   );
 };

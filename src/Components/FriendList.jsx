@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../Styles/FX.css";
+import ChatList from "./ChatList";
 
 const FriendList = ({ activeTab }) => {
   const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -23,11 +24,12 @@ const FriendList = ({ activeTab }) => {
         absolute left-[5%] top-4 h-[85%]
         sm:w-[60%] sm:h-[85%] sm:left-[2%] sm:top-4
         lg:static lg:h-[95%] 
-        flex justify-center items-center text-[white]
+        flex justify-center text-[white]
+        overflow-scroll
       `}
       style={{ width: isLargeScreen ? "20%" : undefined }}
     >
-      {activeTab === 'chats' && <p className="p-4">Chats</p>}
+      {activeTab === 'chats' && <ChatList />}
       {activeTab === 'friends' && <p className="p-4">Friends</p>}
       {activeTab === 'notifications' && <p className="p-4">Notifications</p>}
       {activeTab === 'profile' && <p className="p-4">Profile</p>}
